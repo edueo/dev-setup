@@ -1,0 +1,17 @@
+---
+
+base_productivity_tools:
+ - libreoffice
+ - mousepad
+ - chromium
+ - flameshot
+ - tmux
+ - unzip
+ - pwgen
+ - wget
+ - fish
+ - jq
+ - kitty
+ - kitty-kitten
+ - vim
+ 

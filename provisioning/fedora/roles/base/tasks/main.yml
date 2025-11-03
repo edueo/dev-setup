@@ -4,3 +4,8 @@
        name: "*"
        state: latest
      become: true
+   - name: install base productivity tools
+     ansible.builtin.dnf:
+       name: "{{ base_productivity_tools }}"
+       state: latest
+     become: true
