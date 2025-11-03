@@ -1,0 +1,6 @@
+- block:
+   - name: perform system update
+     ansible.builtin.dnf:
+       name: "*"
+       state: latest
+     become: true
