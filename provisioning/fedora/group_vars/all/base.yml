@@ -15,4 +15,7 @@ base_productivity_tools:
  - kitty-kitten
  - vim
  - stow
+ - direnv
+ - remmina
+ - remmina-plugins-rdp
  
