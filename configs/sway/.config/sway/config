@@ -16,6 +16,8 @@ set $right l
 # Your preferred terminal emulator
 # Recommends: foot
 set $term kitty
+set $browser firefox
+set $screenshot flameshot
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -74,6 +76,12 @@ output "eDP-1" disable
 #
     # Start a terminal
     bindsym $mod+Return exec $term
+    
+    # Start a browser
+    bindsym $mod+b exec $browser
+
+    # Print screen
+    bindsym $mod+Print exec $screenshot gui
 
     # Kill focused window
     bindsym $mod+q kill
@@ -150,7 +158,8 @@ output "eDP-1" disable
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
-    bindsym $mod+b splith
+    
+    #bindsym $mod+b splith
     bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
