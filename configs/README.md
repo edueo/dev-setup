@@ -44,7 +44,7 @@ home/
 ## Como usar
 
 1. Clonar o projeto.
-2. Para aplicar as configurações de um pacote, executar `stow {package} -t ~`, exemplo: `stow git -t ~`
+2. Para aplicar as configurações de um pacote, executar `stow {package} -t {target}`, exemplo: `stow git -t ~`
 
 ## Instalar vim-plug para gerenciar plugins do vim
 
