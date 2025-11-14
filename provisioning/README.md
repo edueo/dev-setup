@@ -18,7 +18,9 @@ sudo apt update
 sudo apt upgrade
 sudo apt install git ansible
 ```
-
+```
+    ansible-galaxy collection install community.general
+```
 Executar playbook principal
 
 ```bash
