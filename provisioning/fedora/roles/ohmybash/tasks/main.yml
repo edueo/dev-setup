@@ -1,0 +1,10 @@
+---
+- block:
+    - name: Check if a service is running
+      ansible.builtin.shell: ls -d ~/.oh-my-bash
+      register: ohmybash_is_installed
+      changed_when: false # Prevent task from reporting a change
+    
+    - name: instala ohmybash via shell script
+      ansible.builtin.shell: "sh ../scripts/ohmybash.sh"
+      when: ohmybash_is_installed.rc != 0
