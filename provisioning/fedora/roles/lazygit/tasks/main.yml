@@ -1,0 +1,13 @@
+
+---
+- block:
+  - name: Enable a specific COPR repository
+    community.general.copr:
+      name: dejan/lazygit
+      state: enabled
+    become: true
+  - name: Install lazygit
+    ansible.builtin.dnf:
+      name: lazygit
+      state: latest
+    become: true
