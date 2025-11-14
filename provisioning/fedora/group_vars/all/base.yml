@@ -20,4 +20,5 @@ base_productivity_tools:
  - remmina-plugins-rdp
  - autojump
  - xclip
+ - copyq
  
