@@ -23,4 +23,5 @@ base_productivity_tools:
  - copyq
  - fastfetch
  - glow
+ - fzf
  
