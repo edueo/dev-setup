@@ -126,6 +126,7 @@ plugins=(
 #
 #OMB_TERM_USE_TPUT=no
 eval "$(direnv hook bash)"
+eval "$(fzf --bash)"
 source "$OSH"/oh-my-bash.sh
 
 # User configuration
