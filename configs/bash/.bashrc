@@ -125,7 +125,7 @@ plugins=(
 # initialized to be the ANSI version:
 #
 #OMB_TERM_USE_TPUT=no
-
+eval "$(direnv hook bash)"
 source "$OSH"/oh-my-bash.sh
 
 # User configuration
