@@ -1,4 +1,13 @@
 - block:
+   - name: Add charm repository
+     ansible.builtin.yum_repository:
+       name: charm
+       description: "Charm Repository"
+       baseurl: "https://repo.charm.sh/yum/"
+       gpgcheck: yes
+       gpgkey: "https://repo.charm.sh/yum/gpg.key"
+       enabled: yes
+     become: true
    - name: perform system update
      ansible.builtin.dnf:
        name: "*"
