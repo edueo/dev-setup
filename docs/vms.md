@@ -21,12 +21,6 @@ qemu-system-x86_64 \
 ```
 4. Após a instalação, executar a VM sem o cdrom montoado.
 ```
-qemu-system-x86_64 \
-  -enable-kvm \
-  -m 2048 \
-  -cpu host \
-  -smp 2 \
-  -drive file={DISK_NAME}.qcow2,format=qcow2 \
-  -vga virtio
+qemu-system-x86_64 -enable-kvm -m 4096 -cpu host -smp 2 -drive file={DISK_NAME}.qcow2,format=qcow2 -vga virtio
 ```
 
