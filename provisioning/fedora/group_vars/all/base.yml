@@ -27,4 +27,5 @@ base_productivity_tools:
  - ranger
  - qemu-system-x86
  - qemu-kvm
+ - qemu-img
  
