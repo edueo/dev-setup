@@ -161,3 +161,6 @@ source "$OSH"/oh-my-bash.sh
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+export ASDF_DATA_DIR="/opt/asdf"
+export PATH="$ASDF_DATA_DIR/shims:$PATH"
+. <(asdf completion bash)

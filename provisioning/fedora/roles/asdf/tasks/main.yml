@@ -1,0 +1,15 @@
+---
+- block:
+    - name: instala asdf via shell script 
+      ansible.builtin.shell: "sh ../scripts/asdf.sh"
+   
+    - name: Initialize asdf in bash
+      ansible.builtin.lineinfile:
+        path: "~{{ local_username }}/.bashrc"
+        line: "{{ item }}"
+        create: yes
+      with_items:
+       - export ASDF_DATA_DIR="/opt/asdf"
+       - export PATH="$ASDF_DATA_DIR/shims:$PATH"
+       - . <(asdf completion bash)
+...
