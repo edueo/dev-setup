@@ -5,4 +5,5 @@
 - import_playbook: postman.yml
 - import_playbook: sdkman.yml
 - import_playbook: asdf.yml
+- import_playbook: docker.yml
 
