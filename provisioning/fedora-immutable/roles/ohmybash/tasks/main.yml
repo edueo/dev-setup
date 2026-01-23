@@ -1,10 +1,12 @@
 ---
 - block:
-    - name: Check if a service is running
-      ansible.builtin.shell: ls -d ~/.oh-my-bash
-      register: ohmybash_is_installed
-      changed_when: false # Prevent task from reporting a change
-    
-    - name: instala ohmybash via shell script
-      ansible.builtin.shell: "sh ../scripts/ohmybash.sh"
-      when: ohmybash_is_installed.rc != 0
+  - name: Fetch sdkman
+    ansible.builtin.uri:
+      url: https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh
+      return_content: yes
+    register: ohmybash_installer
+
+  - name: Run ohmybash installer
+    ansible.builtin.shell: 
+      cmd: bash
+      stdin: "{{ ohmybash_installer.content }}"

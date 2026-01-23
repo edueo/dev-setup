@@ -28,4 +28,11 @@ base_productivity_tools:
  - qemu-system-x86
  - qemu-kvm
  - qemu-img
+ - pcmanfm
+ - kate
+ - podman
+ - podman-docker
+ - podman-tui
+ - podman-compose
+ - cmake
  

@@ -1,5 +1,5 @@
 ---
 - block:
     - name: instala docker via shell script
-      ansible.builtin.shell: "sh ../scripts/docker.sh"
+      ansible.builtin.shell: "sh ../scripts/docker-rpmostree.sh"
 ...
