@@ -1,0 +1,12 @@
+---
+- block:
+  - name: Fetch sdkman
+    ansible.builtin.uri:
+      url: https://get.sdkman.io
+      return_content: yes
+    register: sdkman_installer
+
+  - name: Run sdkman installer
+    ansible.builtin.shell: 
+      cmd: bash
+      stdin: "{{ sdkman_installer.content }}"

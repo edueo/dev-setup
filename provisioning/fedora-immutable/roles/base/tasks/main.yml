@@ -1,0 +1,15 @@
+- block:
+   - name: perform system update
+     community.general.rpm_ostree_pkg:
+       name: "*"
+       state: present
+     become: true
+   - name: install base productivity tools
+     community.general.rpm_ostree_pkg:
+       name: "{{ base_productivity_tools }}"
+       state: present
+     register: rpm_ostree_pkg
+     until: rpm_ostree_pkg is not failed
+     retries: 10
+     delay: 30
+     become: true

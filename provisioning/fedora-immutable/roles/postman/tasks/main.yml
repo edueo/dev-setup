@@ -1,0 +1,13 @@
+
+---
+- block:
+  - name: Enable a specific COPR repository
+    community.general.copr:
+      name: coder966/postman
+      state: enabled
+    become: true
+  - name: Install postman
+    ansible.builtin.dnf:
+      name: postman
+      state: latest
+    become: true

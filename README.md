@@ -10,6 +10,15 @@
 dnf update
 dnf install git ansible
 ```
+Para sistemas imutaveis, usar rpm-ostree update
+
+rpm-ostree install ansible
+
+Toda alteracao do sistema sera gerada uma nova imagem do SO
+
+Apos a instalacao do ansible, sera solicitado a reinicializacao do sistema
+Changes queued for next boot. Run "systemctl reboot" to start a reboot
+
 
 #### Ubuntu 
 

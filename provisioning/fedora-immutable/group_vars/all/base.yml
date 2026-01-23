@@ -1,0 +1,31 @@
+---
+
+base_productivity_tools:
+ - libreoffice
+ - mousepad
+ - chromium
+ - flameshot
+ - tmux
+ - unzip
+ - pwgen
+ - wget
+ - fish
+ - jq
+ - kitty
+ - kitty-kitten
+ - vim
+ - stow
+ - direnv
+ - remmina
+ - remmina-plugins-rdp
+ - autojump
+ - xclip
+ - copyq
+ - fastfetch
+ - glow
+ - fzf
+ - ranger
+ - qemu-system-x86
+ - qemu-kvm
+ - qemu-img
+ 
