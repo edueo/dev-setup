@@ -1,0 +1,12 @@
+---
+- block:
+  - name: Fetch cursor cli
+    ansible.builtin.uri:
+      url: https://cursor.com/install
+      return_content: yes
+    register: cursor_cli_installer
+
+  - name: Run cursor cli installer
+    ansible.builtin.shell: 
+      cmd: bash
+      stdin: "{{ cursor_cli_installer.content }}"
