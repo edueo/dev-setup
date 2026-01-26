@@ -1,0 +1,12 @@
+---
+- block:
+  - name: Fetch mise
+    ansible.builtin.uri:
+      url: https://mise.run
+      return_content: yes
+    register: sdkman_installer
+
+  - name: Run mise installer
+    ansible.builtin.shell: 
+      cmd: bash
+      stdin: "{{ sdkman_installer.content }}"

@@ -5,6 +5,7 @@
 #- import_playbook: lazygit.yml
 #- import_playbook: postman.yml
 - import_playbook: sdkman.yml
+- import_playbook: mise.yml
 #- import_playbook: asdf.yml
 #- import_playbook: docker.yml
 
