@@ -11,5 +11,6 @@
 	rebase = true
 [core]
 	editor = vim
+	excludesFile = ~/.gitignore_global
 [commit]
 	template = ~/.gitmessage.txt
