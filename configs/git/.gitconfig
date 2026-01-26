@@ -9,3 +9,5 @@
 	st = status
 [pull]
 	rebase = true
+[core]
+	editor = vim
