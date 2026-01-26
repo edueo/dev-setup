@@ -1,0 +1,16 @@
+---
+
+flatpak_packages:
+  - org.gimp.GIMP
+  - io.podman_desktop.PodmanDesktop
+  - be.alexandervanhee.gradia
+  - com.jetbrains.IntelliJ-IDEA-Community
+  - com.mongodb.Compass
+  - com.getpostman.Postman
+  - com.brave.Browser
+  - com.github.IsmaelMartinez.teams_for_linux
+  - org.kde.okular
+  - us.zoom.Zoom
+  - com.vivaldi.Vivaldi
+  - io.dbeaver.DBeaverCommunity
+  - com.github.hluk.copyq

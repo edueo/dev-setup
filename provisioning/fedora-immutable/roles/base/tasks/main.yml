@@ -8,6 +8,7 @@
      community.general.rpm_ostree_pkg:
        name: "{{ base_productivity_tools }}"
        state: present
+       apply_live: true # aplica a instalação imediatamente, sem a necessidade de reiniciar o sistema
      register: rpm_ostree_pkg
      until: rpm_ostree_pkg is not failed
      retries: 10

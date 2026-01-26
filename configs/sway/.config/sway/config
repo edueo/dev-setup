@@ -17,7 +17,8 @@ set $right l
 # Recommends: foot
 set $term kitty
 set $browser firefox
-set $screenshot flameshot
+set $file_manager pcmanfm
+#set $screenshot gradia
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -88,13 +89,16 @@ gaps outer 5
     bindsym $mod+b exec $browser
 
     # Print screen
-    bindsym $mod+Print exec $screenshot gui
+    bindsym $mod+Print exec flatpak run be.alexandervanhee.gradia --screenshot=INTERACTIVE
 
     # Kill focused window
     bindsym $mod+q kill
 
     # Start your launcher
     bindsym $mod+d exec $menu
+   
+    # Start file manager
+    bindsym $mod+Shift+f exec $file_manager
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.

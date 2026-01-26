@@ -7,7 +7,7 @@
       state: enabled
     become: true
   - name: Install lazygit
-    ansible.builtin.dnf:
+    community.general.rpm_ostree_pkg:
       name: lazygit
-      state: latest
+      state: present
     become: true

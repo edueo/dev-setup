@@ -35,4 +35,6 @@ base_productivity_tools:
  - podman-tui
  - podman-compose
  - cmake
+ - krita
+ - obs-studio
  

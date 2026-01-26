@@ -1,0 +1,7 @@
+---
+- block:
+    - name: enable flathub
+      ansible.builtin.shell: "flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo"
+    - name: install flatpak packages
+      community.general.flatpak:
+        name: "{{flatpak_packages}}"
