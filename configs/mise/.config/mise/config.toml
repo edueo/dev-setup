@@ -1,2 +1,3 @@
 [tools]
+lazygit = "latest"
 node = "24"
