@@ -12,7 +12,7 @@ dnf install git ansible
 ```
 Para sistemas imutaveis, usar rpm-ostree update
 
-rpm-ostree install ansible
+rpm-ostree install ansible --apply-live
 
 Toda alteracao do sistema sera gerada uma nova imagem do SO
 
