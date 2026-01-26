@@ -1,12 +1,19 @@
 ---
 - block:
-  - name: Fetch sdkman
+  - name: Get status of a directory .oh-my-bash
+    ansible.builtin.stat:
+      path: "~/.oh-my-bash" 
+    register: ohmybash_status
+  
+  - name: Fetch oh-my-bash
     ansible.builtin.uri:
       url: https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh
       return_content: yes
     register: ohmybash_installer
+    when: not ohmybash_status.stat.exists
 
   - name: Run ohmybash installer
     ansible.builtin.shell: 
       cmd: bash
       stdin: "{{ ohmybash_installer.content }}"
+    when: not ohmybash_status.stat.exists

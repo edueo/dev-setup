@@ -1,7 +1,7 @@
 ---
 - import_playbook: base.yml
 - import_playbook: flatpak.yml
-#- import_playbook: ohmybash.yml
+- import_playbook: ohmybash.yml
 #- import_playbook: lazygit.yml
 #- import_playbook: postman.yml
 - import_playbook: sdkman.yml
