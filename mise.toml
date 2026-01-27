@@ -1,0 +1,2 @@
+[tasks]
+hello = "echo hello from mise"
