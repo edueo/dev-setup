@@ -1,0 +1,8 @@
+# Podman
+
+Para rodar com test containers
+
+```
+systemctl --user enable --now podman.socket   
+export DOCKER_HOST=unix://${XDG_RUNTIME_DIR}/podman/podman.sock
+```
