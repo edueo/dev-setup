@@ -3,7 +3,7 @@
   tasks:
     # add user to docker group to run docker commands without sudo
     # add user to libvirt group so that user can attach usb devices to guest OS
-    - name: add user to docker and vboxusers groups
+    - name: add user to libvirt groups
       ansible.builtin.user:
         name: "{{ local_username }}"
         append: yes
