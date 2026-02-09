@@ -40,4 +40,9 @@ base_productivity_tools:
  - calibre
  - fuse-devel
  - neovim
- 
+ - libvirt-daemon-config-network
+ - libvirt-daemon-kvm
+ - qemu-kvm
+ - virt-install
+ - virt-manager
+ - virt-viewer

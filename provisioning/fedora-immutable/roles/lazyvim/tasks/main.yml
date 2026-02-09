@@ -1,6 +1,11 @@
 ---
 
 - block:
+   - name: Get status of a directory .config/nvim
+     ansible.builtin.stat:
+      path: "~/.config/nvim/" 
+     register: nvim_status
+  
    - name: install lazyvim from repository
      ansible.builtin.git:
       repo: "{{ lazyvim_repo }}"
@@ -8,6 +13,7 @@
       single_branch: 'yes'
       version: main
       force: yes
+     when: not nvim_status.stat.exists
      tags:
       - lazyvim
   become: false
