@@ -38,4 +38,6 @@ base_productivity_tools:
  - krita
  - obs-studio
  - calibre
+ - fuse-devel
+ - neovim
  

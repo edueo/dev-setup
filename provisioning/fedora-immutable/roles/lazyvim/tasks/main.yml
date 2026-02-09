@@ -1,0 +1,14 @@
+---
+
+- block:
+   - name: install lazyvim from repository
+     ansible.builtin.git:
+      repo: "{{ lazyvim_repo }}"
+      dest: ~/.config/nvim
+      single_branch: 'yes'
+      version: main
+      force: yes
+     tags:
+      - lazyvim
+  become: false
+  become_user: "{{ local_username }}"

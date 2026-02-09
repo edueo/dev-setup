@@ -9,4 +9,4 @@
 - import_playbook: mise.yml
 #- import_playbook: asdf.yml
 #- import_playbook: docker.yml
-
+- import_playbook: lazyvim.yml
