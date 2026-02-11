@@ -46,3 +46,5 @@ base_productivity_tools:
  - virt-install
  - virt-manager
  - virt-viewer
+ - evince
+ - pipx
