@@ -162,3 +162,6 @@ source "$OSH"/oh-my-bash.sh
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 eval "$(~/.local/bin/mise activate bash)"
+
+# opencode
+export PATH=/home/userntt/.opencode/bin:$PATH

@@ -1,0 +1,12 @@
+---
+- block:
+  - name: Fetch opencode
+    ansible.builtin.uri:
+      url: https://opencode.ai/install
+      return_content: yes
+    register: opencode_cli_installer
+
+  - name: Run opencode installer
+    ansible.builtin.shell: 
+      cmd: bash
+      stdin: "{{ opencode_cli_installer.content }}"
