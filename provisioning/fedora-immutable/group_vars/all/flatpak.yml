@@ -14,3 +14,4 @@ flatpak_packages:
   - com.vivaldi.Vivaldi
   - io.dbeaver.DBeaverCommunity
   - com.github.hluk.copyq
+  - com.visualstudio.code
