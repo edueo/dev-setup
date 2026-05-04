@@ -1,0 +1,12 @@
+---
+- block:
+  - name: Fetch lazydocker
+    ansible.builtin.uri:
+      url: https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh
+      return_content: yes
+    register: lazydocker_installer
+
+  - name: Run lazydocker installer
+    ansible.builtin.shell: 
+      cmd: bash
+      stdin: "{{ lazydocker_installer.content }}"
