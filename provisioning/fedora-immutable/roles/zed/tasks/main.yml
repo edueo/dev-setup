@@ -1,0 +1,12 @@
+---
+- block:
+  - name: Fetch ZED
+    ansible.builtin.uri:
+      url: https://zed.dev/install.sh
+      return_content: yes
+    register: zed_installer
+
+  - name: Run Zed installer
+    ansible.builtin.shell: 
+      cmd: bash
+      stdin: "{{ zed_installer.content }}"

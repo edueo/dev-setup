@@ -11,5 +11,6 @@
 #- import_playbook: docker.yml
 - import_playbook: lazyvim.yml
 - import_playbook: opencode.yml
+- import_playbook: zed.yml
 - import_playbook: lazydocker.yml
 - import_playbook: post_install.yml
